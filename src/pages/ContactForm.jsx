@@ -26,19 +26,10 @@ function ContactForm() {
         </a>
       </li>
       <li>
-        <strong>Registered Office:</strong> [Insert Address if applicable]
+        <strong>Registered Office:</strong> [ADRES]
       </li>
       <li>
-        <strong>VAT:</strong> BE [Insert VAT Number]
-      </li>
-      <li>
-        <strong>Company Number:</strong> [Insert Company Number]
-      </li>
-      <li>
-        <strong>Website:</strong>{" "}
-        <a href="https://www.hhet.be" className="text-blue-600 hover:underline">
-          www.hhet.be
-        </a>
+        <strong>VAT:</strong> BE [BTW NUMMER]
       </li>
     </ul>
   </div>

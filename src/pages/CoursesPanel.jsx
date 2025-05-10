@@ -31,7 +31,7 @@ function CoursesPanel() {
 
       <Carousel sectionName="courses">
         <CarouselItem>
-          <RightHandPanel imageLink="/deescalation_placeholder.webp">
+          <RightHandPanel imageLink={`${import.meta.env.BASE_URL}deescalation_placeholder.webp`}>
             <h2 className="text-3xl font-bold mb-6">{bigYellow("D")}E-ESCALATION  {bigYellow("T")}ECHNIQUES & {bigYellow("R")}ESOURCES</h2>
             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, ve</p>
             <br />
@@ -39,7 +39,7 @@ function CoursesPanel() {
           </RightHandPanel>
         </CarouselItem>
         <CarouselItem>
-          <LeftHandPanel imageLink="/travel_risk_placeholder.jpg">
+          <LeftHandPanel imageLink={`${import.meta.env.BASE_URL}travel_risk_placeholder.jpg`}>
             <h2 className="text-3xl font-bold mb-6">{bigYellow("T")}RAVEL {bigYellow("S")}ECURITY {bigYellow("A")}WARENESS {bigYellow("T")}RAINING</h2>
             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, ve</p>
             <br />
@@ -47,7 +47,7 @@ function CoursesPanel() {
           </LeftHandPanel>
         </CarouselItem>
         <CarouselItem>
-          <RightHandPanel imageLink="/emergency_care_placeholder.jpg">
+          <RightHandPanel imageLink={`${import.meta.env.BASE_URL}emergency_care_placeholder.jpg`}>
             <h2 className="text-3xl font-bold mb-6">{bigYellow("E")}MERGENCY {bigYellow("C")}ASUALTY {bigYellow("C")}ARE</h2>
             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, ve</p>
             <br />
@@ -55,7 +55,7 @@ function CoursesPanel() {
           </RightHandPanel>
         </CarouselItem>
         <CarouselItem>
-          <LeftHandPanel imageLink="/first_aid_placeholder.jpg">
+          <LeftHandPanel imageLink={`${import.meta.env.BASE_URL}first_aid_placeholder.jpg`}>
             <h2 className="text-3xl font-bold mb-6">{bigYellow("F")}IRST {bigYellow("A")}ID {bigYellow("T")}RAINING</h2>
             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, ve</p>
             <br />
@@ -63,7 +63,7 @@ function CoursesPanel() {
           </LeftHandPanel>
         </CarouselItem>
         <CarouselItem>
-          <RightHandPanel imageLink="/heat_placeholder.webp">
+          <RightHandPanel imageLink={`${import.meta.env.BASE_URL}heat_placeholder.webp`}>
             <h2 className="text-3xl font-bold mb-6">{bigYellow("H")}OSTILE {bigYellow("E")}NVIRONMENT {bigYellow("A")}WARENESS {bigYellow("T")}RAINING</h2>
             <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, ve</p>
             <br />

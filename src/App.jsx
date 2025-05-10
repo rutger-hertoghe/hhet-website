@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <main>
         <div >
-          <div id="intro" className="bg-gray-100 h-screen pt-26">
+          <div id="home" className="bg-gray-100 h-screen pt-26">
             <HeroSection />
           </div>
 
@@ -52,7 +52,7 @@ function App() {
           </div>
 
           {/* ---- ABOUT ---- */}
-          <div id="about" className="bg-gray-100 h-screen">
+          <div id="about" className="bg-gray-100 min-h-screen h-full pb-10">
             <Spacer />
             <AboutPanel />
           </div>

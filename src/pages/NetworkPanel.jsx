@@ -31,15 +31,15 @@ function NetworkPanel() {
         </h3>
         {/* Row 1 */}
         <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
-          <PartnerLogo src="/Partners/Inspiration4You.webp" alt="Inspiration4You" href="https://www.inspiration4you.eu/" />
-          <PartnerLogo src="/Partners/Wodan.webp" alt="Wodan" href="https://www.wodaninternational.com/" />
-          <PartnerLogo src="/Partners/CDO.webp" alt="CDO" href="https://cdotraining.eu/" />
+          <PartnerLogo src={`${import.meta.env.BASE_URL}Partners/Inspiration4You.webp`} alt="Inspiration4You" href="https://www.inspiration4you.eu/" />
+          <PartnerLogo src={`${import.meta.env.BASE_URL}Partners/Wodan.webp`} alt="Wodan" href="https://www.wodaninternational.com/" />
+          <PartnerLogo src={`${import.meta.env.BASE_URL}Partners/CDO.webp`} alt="CDO" href="https://cdotraining.eu/" />
         </div>
 
         {/* Row 2 */}
         <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
-          <PartnerLogo src = "/Partners/krisenwerk.webp" alt = "Krisenwerk" href ="https://krisenwerk.de/"/>
-          <PartnerLogo src = "/Partners/GFA.webp" alt = "GFA" href = "https://www.gfa-group.de/"/>
+          <PartnerLogo src = {`${import.meta.env.BASE_URL}Partners/krisenwerk.webp`} alt = "Krisenwerk" href ="https://krisenwerk.de/"/>
+          <PartnerLogo src = {`${import.meta.env.BASE_URL}Partners/TheOutsiderLimburg.webp`} alt = "The Outsider Limburg" href = "https://outsiderlimburg.be"/>
         </div>
       </div>
     </>
