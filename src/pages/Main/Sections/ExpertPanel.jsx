@@ -45,7 +45,7 @@ HHET-BE brings together a select network of certified trainers with extensive la
   </div>
 
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-    <ExpertCard name = "Trainer L. (Belgium)" 
+    <ExpertCard name = "Trainer L. (Belgium)"
                 mainExp ="International operations & law enforcement"
                 languages = "Dutch, French, German, English">
       <ExpLine icon = {faStar}>Firearms Specialist & EU Range Officer</ExpLine>

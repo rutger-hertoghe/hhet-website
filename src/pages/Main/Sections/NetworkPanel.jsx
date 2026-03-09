@@ -21,7 +21,7 @@ function NetworkPanel() {
           Our Network
         </h2>
         <p className="text-gray-600 text-lg text-justify max-w-3xl pb-10 mx-auto">
-          HHET-BE’s trainer network brings together several decades of combined experience across national and international executive services, civilian cooperation organizations, EU CSDP missions, United Nations peacekeeping operations, peace-building efforts, and CivPol missions around the globe. Our team members have been deployed in both military and civilian capacities to post-conflict zones in regions such as the Middle East (Iraq, Yemen), South Asia (Afghanistan, Pakistan), Central Africa (Mali, DRC, Niger), and the Balkans, among others.
+          HHET-BE's trainer network brings together several decades of combined experience across national and international executive services, civilian cooperation organizations, EU CSDP missions, United Nations peacekeeping operations, peace-building efforts, and CivPol missions around the globe. Our team members have been deployed in both military and civilian capacities to post-conflict zones in regions such as the Middle East (Iraq, Yemen), South Asia (Afghanistan, Pakistan), Central Africa (Mali, DRC, Niger), and the Balkans, among others.
         </p>
       </div>
 

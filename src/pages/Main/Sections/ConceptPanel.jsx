@@ -8,10 +8,10 @@ function ConceptPanel() {
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Training Concept</h2>
             <p className="text-lg text-justify text-gray-700">
-              At HHET-BE, we provide EU-aligned training rooted in the standards of the ENTRi “IN CONTROL” handbook, as endorsed by the European Security and Defence College. Our programs are specifically tailored to meet the needs of civilian professionals operating in crisis-prone environments—NGO staff, journalists, academics, businesspeople, and field researchers alike.
+              At HHET-BE, we provide EU-aligned training rooted in the standards of the ENTRi "IN CONTROL" handbook, as endorsed by the European Security and Defence College. Our programs are specifically tailored to meet the needs of civilian professionals operating in crisis-prone environments—NGO staff, journalists, academics, businesspeople, and field researchers alike.
             </p><br />
             <p className="text-lg text-gray-700 mx-auto">
-              We don’t just deliver content—we shape capability.</p>
+              We don't just deliver content—we shape capability.</p>
             <p className="text-lg text-gray-700 text-justify mx-auto"><br />
               Every course is designed to empower participants with the awareness, mindset, and behavioral tools necessary to stay safe, make sound decisions under pressure, and support organizational resilience. Each training is adapted to the objectives of your mission or institution, and is built on one foundational principle: personal responsibility in high-risk environments begins with personal readiness.
             </p>
@@ -28,7 +28,7 @@ function ConceptPanel() {
               </ul>
               <br />
               <p className="bottom-0 text-gray-700">
-                Courses are typically delivered over multiple consecutive days, hosted at suitable venues, and tailored to your organization’s needs.
+                Courses are typically delivered over multiple consecutive days, hosted at suitable venues, and tailored to your organization's needs.
               </p><br/>
               <h3 className="text-2xl font-semibold text-gray-800">Training Outcomes</h3>
               <ul className="list-disc list-inside text-gray-700 space-y-2">

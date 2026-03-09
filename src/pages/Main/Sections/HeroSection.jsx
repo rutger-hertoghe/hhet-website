@@ -1,5 +1,6 @@
 import { faEnvelope, faListUl } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Flex, Group, Title } from "@mantine/core";
 
 function HeroSection() {
   function ScrollToElement(elementId) {
@@ -17,10 +18,10 @@ function HeroSection() {
             From Reaction to Response
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-4">
-            Real-world crisis training for those who don’t wear uniforms.
+            Real-world crisis training for those who don't wear uniforms.
           </p>
           <p className="text-md md:text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            At HHET-BE Training & Consulting, we don’t teach textbook theory. We transform mindset and behavior through immersive, experience-driven training led by instructors who’ve served in the world’s most volatile environments.
+            At HHET-BE Training & Consulting, we don't teach textbook theory. We transform mindset and behavior through immersive, experience-driven training led by instructors who've served in the world's most volatile environments.
           </p>
           <p className="text-md md:text-lg text-gray-600 max-w-3xl mx-auto mb-10">
             Prepare your people — not with fear, but with readiness.

@@ -1,3 +1,5 @@
+import { Flex, Title } from "@mantine/core";
+
 function AboutPanel() {
 
 
@@ -17,13 +19,13 @@ function AboutPanel() {
         {/* Top Statement */}
         {/* <div className="text-center space-y-6">
           <h2 className="text-2xl md:text-3xl font-semibold text-yellow-600 uppercase tracking-wider">
-            When darkness sets in, let’s keep the light on.
+            When darkness sets in, let's keep the light on.
           </h2>
           <p className="text-lg md:text-xl text-gray-700">
             In a world shaped by different cultures, beliefs, and systems—and marked by the ever-present risks of unrest, crime, economic instability, or political tension—even ordinary circumstances can escalate quickly.
           </p>
           <p className="text-lg text-gray-700">
-            It’s not just rare, large-scale crises that pose a threat. More often, it’s the smaller, everyday incidents that catch us off guard. In those moments, the difference between a reaction and a response can decide the outcome.
+            It's not just rare, large-scale crises that pose a threat. More often, it's the smaller, everyday incidents that catch us off guard. In those moments, the difference between a reaction and a response can decide the outcome.
           </p>
           <p className="text-lg text-gray-700">
             By integrating a preparedness mindset into daily routines and operational planning—regardless of your role or region—you foster resilience. That small shift in awareness can be the deciding factor between vulnerability and control.
@@ -41,7 +43,7 @@ function AboutPanel() {
           </p>
           <br />
           <p>
-            As freelance instructors operating within a strong network of experts, we’ve had the privilege of preparing civilian staff from NGOs and governmental organizations for the realities of crisis management. By reshaping behavior through mindset shifts and heightened situational awareness, we empower individuals to respond more effectively when incidents arise.
+            As freelance instructors operating within a strong network of experts, we've had the privilege of preparing civilian staff from NGOs and governmental organizations for the realities of crisis management. By reshaping behavior through mindset shifts and heightened situational awareness, we empower individuals to respond more effectively when incidents arise.
           </p>
           <br />
           <p>

@@ -1,7 +1,7 @@
-import Carousel from '../components/Carousel'
-import CarouselItem from '../components/CarouselItem';
-import RightHandPanel from "../components/RightHandPanel";
-import LeftHandPanel from '../components/LeftHandPanel';
+import Carousel from '../../../components/Carousel'
+import CarouselItem from '../../../components/CarouselItem';
+import RightHandPanel from "../../../components/RightHandPanel";
+import LeftHandPanel from '../../../components/LeftHandPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
