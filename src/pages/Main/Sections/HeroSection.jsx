@@ -1,6 +1,6 @@
 import { faEnvelope, faListUl } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BackgroundImage, Box, Button, Flex, Grid, Group, Stack, Text, Title } from "@mantine/core";
+import { BackgroundImage, Box, Button, Divider, Flex, Grid, Group, Stack, Text, Title } from "@mantine/core";
 import heroImage from '../../../assets/images/hero_placeholder.png';
 
 
@@ -18,6 +18,8 @@ function HeroSection() {
       <Box p="xl" h="100%" style={{ background: 'rgba(0, 0, 0, 0.72)' }}>
         <Stack align="center" justify="center">
           <Title c="gray.3" size = {48}>From Reaction to Response</Title>
+
+          <Divider w={60} color="yellow.5" size="sm" />
 
           <Title c="gray.4" order={3} >Real-world crisis training for those who don't wear uniforms.</Title>
 

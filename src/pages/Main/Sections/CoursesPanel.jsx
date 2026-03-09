@@ -1,7 +1,7 @@
 import { Carousel } from '@mantine/carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { Box, Button, Card, Flex, Stack, Text, Title } from '@mantine/core';
+import { Box, Button, Card, Divider, Flex, Stack, Text, Title } from '@mantine/core';
 import '@mantine/carousel/styles.css';
 import deterImg from "../../../assets/images/deter_placeholder.png"
 import travelRiskImg from "../../../assets/images/travel_risk_placeholder.jpg"
@@ -24,6 +24,9 @@ function CoursesPanel() {
         <Title size={36}>
           Our Courses
         </Title>
+
+        <Divider w={60} color="yellow.5" size="sm" />
+
         <Text ta="center" size="lg" w="50%" c="gray.7">
           Each of our courses is built to reshape instinct, raise awareness, and embed practical skills — equipping individuals to respond with clarity when the unexpected becomes reality.
         </Text>
