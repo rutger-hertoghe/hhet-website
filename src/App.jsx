@@ -10,10 +10,13 @@ import AboutPanel from './pages/AboutPanel';
 import Spacer from './components/Spacer';
 import ConceptPanel from './pages/ConceptPanel';
 
+import {MantineProvider} from '@mantine/core';
+import '@mantine/core/styles.css'
+
 function App() {
 
   return (
-    <>
+    <MantineProvider>
       <Navbar />
       <main>
         <div >
@@ -58,8 +61,8 @@ function App() {
           </div>
         </div>
       </main>
-    </>
+    </MantineProvider>
   )
 }
 
-export default App
+export default App;
