@@ -1,6 +1,8 @@
 import { faEnvelope, faListUl } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Flex, Group, Title } from "@mantine/core";
+import { BackgroundImage, Box, Button, Flex, Grid, Group, Stack, Text, Title } from "@mantine/core";
+import heroImage from '../../../assets/images/hero_placeholder.png';
+
 
 function HeroSection() {
   function ScrollToElement(elementId) {
@@ -8,41 +10,45 @@ function HeroSection() {
     el.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <>
-      <div
-        className="w-full bg-cover bg-center py-24 px-4"
-        style={{ backgroundImage: `${import.meta.env.BASE_URL}heat_placeholder.jpg` }} // Update with your actual image path
-      >
-        <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            From Reaction to Response
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-4">
-            Real-world crisis training for those who don't wear uniforms.
-          </p>
-          <p className="text-md md:text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            At HHET-BE Training & Consulting, we don't teach textbook theory. We transform mindset and behavior through immersive, experience-driven training led by instructors who've served in the world's most volatile environments.
-          </p>
-          <p className="text-md md:text-lg text-gray-600 max-w-3xl mx-auto mb-10">
-            Prepare your people — not with fear, but with readiness.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <button
-              onClick={() => { ScrollToElement("courses") }}
-              className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-3 px-6 rounded-xl transition duration-300"
+    <Box id="home" bg="gray.1" h="100vh" pt={80}>
+    <BackgroundImage
+      src={heroImage}
+      h="100%"
+    >
+      <Box p="xl" h="100%" style={{ background: 'rgba(0, 0, 0, 0.72)' }}>
+        <Stack align="center" justify="center">
+          <Title c="gray.3" size = {48}>From Reaction to Response</Title>
+
+          <Title c="gray.4" order={3} >Real-world crisis training for those who don't wear uniforms.</Title>
+
+          <Text c="gray.3" w="50%" ta="center" size="lg" mb="xl">At HHET-BE Training & Consulting, we don't teach textbook theory. We transform mindset and behavior through immersive, experience-driven training led by instructors who've served in the world's most volatile environments.</Text>
+
+          <Text c='gray.3' w="50%" ta="center" size="lg" mb="xl">Prepare your people — not with fear, but with readiness.</Text>
+
+          <Group>
+            <Button 
+              size="md" 
+              radius="md"
+              leftSection={<FontAwesomeIcon icon={faListUl}/>} 
+              color ="yellow.5" 
+              onClick={()=>{ScrollToElement("courses")}}
             >
-              <FontAwesomeIcon icon={faListUl} /> Explore Our Programs
-            </button>
-            <button type="button"
-              onClick={() => { ScrollToElement("contact") }}
-              className="bg-white border border-gray-300 hover:border-gray-500 text-gray-700 font-semibold py-3 px-6 rounded-xl transition duration-300"
+              Explore our programs
+            </Button>
+            <Button 
+              size="md" 
+              variant="outline" 
+              radius="md"
+              color ="gray.3"
+              leftSection={<FontAwesomeIcon icon={faEnvelope}/>}
             >
-              <FontAwesomeIcon icon={faEnvelope} /> Contact Us
-            </button>
-          </div>
-        </div>
-      </div>
-    </>
+              Contact us
+            </Button>
+          </Group>
+        </Stack>
+        </Box>
+      </BackgroundImage>
+    </Box>
   )
 }
 

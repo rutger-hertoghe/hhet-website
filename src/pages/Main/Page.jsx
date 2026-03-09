@@ -11,9 +11,9 @@ export default function Page() {
   return (
     <main>
       <div>
-        <div id="home" className="bg-gray-100 h-screen pt-26">
+        {/* <div id="home" className="bg-gray-100 h-screen pt-26"> */}
           <HeroSection />
-        </div>
+        {/* </div> */}
 
         {/* ---- COURSES ---- */}
         <div id="courses" className="bg-gray-100 h-screen">
