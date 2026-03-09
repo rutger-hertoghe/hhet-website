@@ -11,10 +11,10 @@ function HeroSection() {
   }
   return (
     <Box id="home" bg="gray.1" h="100vh" pt={80}>
-    <BackgroundImage
-      src={heroImage}
-      h="100%"
-    >
+      <BackgroundImage
+        src={heroImage}
+        h="100%"
+      >
       <Box p="xl" h="100%" style={{ background: 'rgba(0, 0, 0, 0.72)' }}>
         <Stack align="center" justify="center">
           <Title c="gray.3" size = {48}>From Reaction to Response</Title>
