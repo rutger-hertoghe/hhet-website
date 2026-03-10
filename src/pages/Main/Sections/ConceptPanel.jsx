@@ -38,7 +38,7 @@ function ConceptPanel() {
         <Stack gap={64}>
 
           {/* Section Header */}
-          <Stack gap="md" align="center">
+          <Stack align="center">
             <Title order={2} ta="center" c="dark.8" fz={{ base: 32, md: 40 }}>
               Our Training Concept
             </Title>
