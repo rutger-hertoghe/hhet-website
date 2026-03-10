@@ -1,65 +1,173 @@
+import { Anchor, Badge, Box, Container, Divider, Grid, List, Paper, SimpleGrid, Stack, Text, ThemeIcon, Title } from '@mantine/core'
+import classes from './ConceptPanel.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBullseye, faCircleCheck, faComments, faTree, faUsers } from '@fortawesome/free-solid-svg-icons'
+
+const trainingMethods = [
+  {
+    icon: faUsers,
+    title: 'Active Participation',
+    description:
+      'Learners are not passive recipients but engaged contributors—challenged to reflect on their own perceptions, instincts, and decisions.',
+  },
+  {
+    icon: faComments,
+    title: 'Peer Dialogue',
+    description:
+      'Training includes open discussions, idea exchanges, and real-time reflection to deepen understanding and build shared awareness.',
+  },
+  {
+    icon: faBullseye,
+    title: 'Real-World Application',
+    description:
+      'Programs combine lectures, exercises, debates, and field-based simulations for practical, scenario-tested readiness.',
+  },
+]
+
+const outcomes = [
+  'Recognize early warning signs in complex environments',
+  'Adapt rapidly to high-stress, dynamic scenarios',
+  'Make grounded decisions under pressure',
+  'Enhance team safety and organizational resilience',
+]
+
 function ConceptPanel() {
   return (
-    <>
-      <section className="bg-gray-100 px-6">
-        <div className="max-w-5xl mx-auto space-y-16">
+    <Box bg="gray.1" py={80}>
+      <Container size="lg">
+        <Stack gap={64}>
 
-          {/* Header */}
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Training Concept</h2>
-            <p className="text-lg text-justify text-gray-700">
-              At HHET-BE, we provide EU-aligned training rooted in the standards of the ENTRi "IN CONTROL" handbook, as endorsed by the European Security and Defence College. Our programs are specifically tailored to meet the needs of civilian professionals operating in crisis-prone environments—NGO staff, journalists, academics, businesspeople, and field researchers alike.
-            </p><br />
-            <p className="text-lg text-gray-700 mx-auto">
-              We don't just deliver content—we shape capability.</p>
-            <p className="text-lg text-gray-700 text-justify mx-auto"><br />
-              Every course is designed to empower participants with the awareness, mindset, and behavioral tools necessary to stay safe, make sound decisions under pressure, and support organizational resilience. Each training is adapted to the objectives of your mission or institution, and is built on one foundational principle: personal responsibility in high-risk environments begins with personal readiness.
-            </p>
-          </div>
+          {/* Section Header */}
+          <Stack align="center">
+            <Title order={2} ta="center" c="dark.8" fz={{ base: 32, md: 40 }}>
+              Our Training Concept
+            </Title>
+            <Divider w={60} color="yellow.5" size="sm" />
+            <Text size="lg" c="gray.7" ta="center" maw={780} lh={1.7}>
+              At HHET-BE, we provide EU-aligned training rooted in the standards of the ENTRi{' '}
+              <Text component="span" fw={600} c="dark.7">
+                "IN CONTROL"
+              </Text>{' '}
+              handbook, as endorsed by the European Security and Defence College. Our programs are
+              specifically tailored to meet the needs of civilian professionals operating in
+              crisis-prone environments—NGO staff, journalists, academics, businesspeople, and
+              field researchers alike.
+            </Text>
+            <Text size="lg" c="dark.6" ta="center" fw={500} fs="italic">
+              We don't just deliver content—we shape capability.
+            </Text>
+            <Text size="md" c="gray.7" ta="center" maw={780} lh={1.7}>
+              Every course is designed to empower participants with the awareness, mindset, and
+              behavioral tools necessary to stay safe, make sound decisions under pressure, and
+              support organizational resilience. Each training is adapted to the objectives of your
+              mission or institution, and is built on one foundational principle:{' '}
+              <Text component="span" fw={600} c="dark.7">
+                personal responsibility in high-risk environments begins with personal readiness.
+              </Text>
+            </Text>
+          </Stack>
 
-          {/* Methodology */}
-          <div className="flex flex-row">
-            <div className="w-2/3 space-y-2">
-              <h3 className="text-2xl font-semibold text-gray-800">How We Train</h3>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li><strong>Active participation:</strong> Learners are not passive recipients but engaged contributors—challenged to reflect on their own perceptions, instincts, and decisions.</li>
-                <li><strong>Peer dialogue:</strong> Training includes open discussions, idea exchanges, and real-time reflection.</li>
-                <li><strong>Real-world application:</strong> Programs combine lectures, exercises, debates, and field-based simulations.</li>
-              </ul>
-              <br />
-              <p className="bottom-0 text-gray-700">
-                Courses are typically delivered over multiple consecutive days, hosted at suitable venues, and tailored to your organization's needs.
-              </p><br/>
-              <h3 className="text-2xl font-semibold text-gray-800">Training Outcomes</h3>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>Recognize early warning signs in complex environments</li>
-                <li>Adapt rapidly to high-stress, dynamic scenarios</li>
-                <li>Make grounded decisions under pressure</li>
-                <li>Enhance team safety and organizational resilience</li>
-              </ul>
-            </div>
+          {/* How We Train */}
+          <Stack gap="md">
+            <Title order={3} c="dark.7" ta="center">
+              How We Train
+            </Title>
+            <SimpleGrid cols={{ base: 1, sm: 3 }} spacing="lg">
+              {trainingMethods.map((method) => (
+                <Paper key={method.title} p="xl" radius="md" withBorder shadow="xs" bg="white" className={classes.trainingCard}>
+                  <ThemeIcon size={52} radius="xl" color="yellow" variant="light" mb="md">
+                    <FontAwesomeIcon icon={method.icon} size="lg" />
+                  </ThemeIcon>
+                  <Title order={4} mb="xs" c="dark.7">
+                    {method.title}
+                  </Title>
+                  <Text size="sm" c="gray.6" lh={1.6}>
+                    {method.description}
+                  </Text>
+                </Paper>
+              ))}
+            </SimpleGrid>
+            <Text size="sm" c="gray.6" ta="center" mt="xs">
+              Courses are typically delivered over multiple consecutive days, hosted at suitable
+              venues, and tailored to your organization's needs.
+            </Text>
+          </Stack>
 
-            {/* Outdoor Training Highlight */}
-            <div className="w-1/3 h-full bg-yellow-100 border-l-4 border-yellow-400 p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold text-yellow-900 mb-2">Back to Basics – Outdoor Training Option</h3>
-              <p className="text-gray-800 text-justify">
-                For sessions held in Belgium, HHET-BE offers an optional outdoor training module in partnership with{" "}
-                <a href="https://outsiderlimburg.be" target="_blank" rel="noopener noreferrer" className="underline text-yellow-700 hover:text-yellow-800">
-                  The Outsider Limburg
-                </a>.
-                This add-on transforms the experience into a physically immersive, back-to-basics training—ideal for testing adaptability, teamwork, and leadership in raw conditions.
-              </p>
-            </div>
-          </div>
+          {/* Outcomes + Outdoor Training */}
+          <Grid gutter="lg" align="stretch">
+            <Grid.Col span={{ base: 12, md: 7 }}>
+              <Paper p="xl" radius="md" withBorder shadow="xs" bg="white" h="100%">
+                <Title order={3} mb="lg" c="dark.7">
+                  Training Outcomes
+                </Title>
+                <List
+                  spacing="md"
+                  icon={
+                    <ThemeIcon color="yellow" size={24} radius="xl" variant="light">
+                      <FontAwesomeIcon icon={faCircleCheck} />
+                    </ThemeIcon>
+                  }
+                >
+                  {outcomes.map((outcome) => (
+                    <List.Item key={outcome}>
+                      <Text size="md" c="gray.7">
+                        {outcome}
+                      </Text>
+                    </List.Item>
+                  ))}
+                </List>
+              </Paper>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, md: 5 }}>
+              <Paper
+                p="xl"
+                radius="md"
+                shadow="xs"
+                bg="yellow.0"
+                h="100%"
+                style={{ borderLeft: '4px solid var(--mantine-color-yellow-5)' }}
+              >
+                <ThemeIcon size={52} radius="xl" color="yellow" variant="light" mb="md">
+                  <FontAwesomeIcon icon={faTree} size="lg" />
+                </ThemeIcon>
+                <Title order={4} mb="xs" c="yellow.9">
+                  Back to Basics – Outdoor Training Option
+                </Title>
+                <Text size="sm" c="gray.8" lh={1.7}>
+                  For sessions held in Belgium, HHET-BE offers an optional outdoor training module
+                  in partnership with{' '}
+                  <Anchor
+                    href="https://outsiderlimburg.be"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    c="yellow.8"
+                    fw={600}
+                  >
+                    The Outsider Limburg
+                  </Anchor>
+                  . This add-on transforms the experience into a physically immersive,
+                  back-to-basics training—ideal for testing adaptability, teamwork, and leadership
+                  in raw conditions.
+                </Text>
+              </Paper>
+            </Grid.Col>
+          </Grid>
 
-          <p className="text-gray-700 mx-auto text-center">
-            Our participants return more capable, more confident, and more prepared to lead with clarity—when it matters most.
-          </p>
+          {/* Closing Statement */}
+          <Paper p="xl" radius="md" ta="center" bg="dark.8">
+            <Text size="lg" c="gray.3" lh={1.8} fw={400} fs="italic" maw={720} mx="auto">
+              Our participants return more capable, more confident, and more prepared to lead with
+              clarity—{' '}
+              <Text component="span" c="yellow.4" fw={600} fs="normal">
+                when it matters most.
+              </Text>
+            </Text>
+          </Paper>
 
-        </div>
-      </section>
-    </>
+        </Stack>
+      </Container>
+    </Box>
   )
 }
 
-export default ConceptPanel;
+export default ConceptPanel

@@ -1,0 +1,7 @@
+.trainingCard {
+  transition: box-shadow 0.2s ease;
+}
+
+.trainingCard:hover {
+  box-shadow: var(--mantine-shadow-md);
+}
