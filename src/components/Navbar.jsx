@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import logo from '../assets/images/het-logo-538.webp';
 
 function Navbar(){
   const [open, setOpen] = useState(false);
@@ -17,7 +18,7 @@ function Navbar(){
     <nav className="fixed top-0 w-full inset-shadow-white-500 border-b-3 border-yellow-300 shadow-xl/10 bg-black z-50 mb-20">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div>
-          <img src={`${import.meta.env.BASE_URL}het-logo-538.webp`} alt="HHET.BE" className="h-18 my-1 border border-white" />
+          <img src={logo} alt="HHET.BE" className="h-18 my-1 border border-white" />
         </div>
         <ul className="md:flex space-x-4">
           {navItems.map((item) => (
