@@ -28,12 +28,12 @@ const contactDetails = [
   {
     icon: faBuilding,
     label: 'Registered Office',
-    value: '[ADRES]',
+    value: <Text>Kalisgroenstraat 6<br/> 3404 Attenhoven<br/>Belgium</Text>,
   },
   {
     icon: faFileInvoice,
     label: 'VAT',
-    value: 'BE [BTW NUMMER]',
+    value: 'BE 0803.790.597',
   },
 ]
 
