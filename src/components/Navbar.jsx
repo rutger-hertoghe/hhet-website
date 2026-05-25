@@ -11,7 +11,8 @@ function Navbar(){
     {name: "Experts", href: "#experts"},
     {name: "Network", href: "#network"},
     {name: "Contact", href: "#contact"},
-    {name: "About",   href: "#about"}
+    {name: "About",   href: "#about"},
+    {name: "Reviews", href: "#reviews"}
   ];
 
   return (

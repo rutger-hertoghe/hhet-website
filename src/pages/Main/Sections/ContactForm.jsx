@@ -16,14 +16,20 @@ import {
   faAt,
   faBuilding,
   faEnvelope,
-  faFileInvoice,
+  faFileInvoice
 } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const contactDetails = [
   {
     icon: faAt,
     label: 'Email',
     value: <Anchor href="mailto:info@hhet.be" c="yellow.7" fw={500}>info@hhet.be</Anchor>,
+  },
+  {
+    icon: faInstagram,
+    label: "Instagram",
+    value: <Anchor href = "https://www.instagram.com/hhet_be/" c="yellow.7" fw={500}>@hhet_be</Anchor>
   },
   {
     icon: faBuilding,

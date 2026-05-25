@@ -1,5 +1,6 @@
-import { Anchor, Badge, Box, Container, Divider, Grid, List, Paper, SimpleGrid, Stack, Text, ThemeIcon, Title } from '@mantine/core'
+import { Anchor, Badge, Box, Container, Divider, Grid, Image, List, Paper, SimpleGrid, Stack, Text, ThemeIcon, Title } from '@mantine/core'
 import classes from './ConceptPanel.module.css'
+import theOutsiderLimburgImg from '../../../assets/images/partners/TheOutsiderLimburg.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBullseye, faCircleCheck, faComments, faTree, faUsers } from '@fortawesome/free-solid-svg-icons'
 
@@ -127,9 +128,10 @@ function ConceptPanel() {
                 h="100%"
                 style={{ borderLeft: '4px solid var(--mantine-color-yellow-5)' }}
               >
-                <ThemeIcon size={52} radius="xl" color="yellow" variant="light" mb="md">
+                {/* <ThemeIcon size={52} radius="xl" color="yellow" variant="light" mb="md">
                   <FontAwesomeIcon icon={faTree} size="lg" />
-                </ThemeIcon>
+                </ThemeIcon> */}
+                <Image src={theOutsiderLimburgImg} alt={"The Outsider"} h={70} w="auto" fit="contain" />
                 <Title order={4} mb="xs" c="yellow.9">
                   Back to Basics – Outdoor Training Option
                 </Title>
@@ -143,7 +145,7 @@ function ConceptPanel() {
                     c="yellow.8"
                     fw={600}
                   >
-                    The Outsider Limburg
+                    The Outsider
                   </Anchor>
                   . This add-on transforms the experience into a physically immersive,
                   back-to-basics training—ideal for testing adaptability, teamwork, and leadership

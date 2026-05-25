@@ -6,6 +6,7 @@ import NetworkPanel from './Sections/NetworkPanel';
 import AboutPanel from './Sections/AboutPanel';
 import Spacer from '../../components/Spacer';
 import ConceptPanel from './Sections/ConceptPanel';
+import ReviewSection from "./Sections/ReviewSection";
 
 export default function Page() {
   return (
@@ -23,32 +24,38 @@ export default function Page() {
 
         {/* ---- CONCEPT ---- */}
         <div id="concept" className="bg-gray-100">
-          <Spacer />
+          {/* <Spacer /> */}
           <ConceptPanel />
         </div>
 
         {/* ---- TRAINERS ---- */}
         <div id="experts" className="bg-gray-100 h-screen">
-          <Spacer />
+          {/* <Spacer /> */}
           <ExpertPanel />
         </div>
 
         {/* ---- NETWORK ---- */}
         <div id="network" className="bg-gray-100 h-screen">
-          <Spacer />
+          {/* <Spacer /> */}
           <NetworkPanel />
         </div>
 
         {/* --- CONTACT ---*/}
         <div id="contact" className="bg-gray-100 h-screen">
-          <Spacer />
+          {/* <Spacer /> */}
           <ContactForm />
         </div>
 
         {/* ---- ABOUT ---- */}
         <div id="about" className="bg-gray-100 min-h-screen h-full pb-10">
-          <Spacer />
+          {/* <Spacer /> */}
           <AboutPanel />
+        </div>
+
+        {/* ---- REVIEWS ---- */}
+        <div id="reviews" className="bg-gray-100 min-h-screen h-full pb-10">
+          {/* <Spacer/> */}
+          <ReviewSection/>
         </div>
       </div>
     </main>

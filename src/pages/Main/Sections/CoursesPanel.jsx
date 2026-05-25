@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretRight, faClock, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Box, Button, Card, Divider, Flex, Group, Stack, Text, Title } from '@mantine/core';
 import '@mantine/carousel/styles.css';
-import deterImg from "../../../assets/images/DETER_color.jpeg"
-import tsatImg from "../../../assets/images/TSAT_color.jpeg"
-import emergencyCareImg from "../../../assets/images/emergency_care_placeholder.jpg"
-import firstAidImg from "../../../assets/images/first_aid_placeholder.jpg"
-import heatImg from "../../../assets/images/HEAT_grey.jpeg"
+import heatImg from "../../../assets/images/heat_grey.jpeg"
+import tsatImg from "../../../assets/images/TSAT_grey.jpeg"
+import deterImg from "../../../assets/images/deter_grey_2.png"
+import firstAidImg from "../../../assets/images/first_aid.jpeg"
+import emergencyCareImg from "../../../assets/images/ecc_grey_2.jpeg"
 import { ScrollToElement } from '../../../utilities';
 
 function CoursesPanel() {
@@ -62,7 +62,7 @@ function CoursesPanel() {
                         <FontAwesomeIcon icon={faClock} className="mr-2 text-gray-500"/>
                         <Text c="gray.9">Duration: 1 Day</Text>
                     </Group>
-                    <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button>
+                    {/* <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button> */}
                   </Stack>
                 </Box>
                 <Box flex={1} style={{ backgroundImage: `url(${tsatImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
@@ -83,7 +83,7 @@ function CoursesPanel() {
                         <FontAwesomeIcon icon={faClock} className="mr-2 text-gray-500"/>
                         <Text c="gray.9">Duration: 1 Day</Text>
                     </Group>
-                    <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button>
+                    {/* <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button> */}
                   </Stack>
                 </Box>
               </Flex>
@@ -104,7 +104,7 @@ function CoursesPanel() {
                         <FontAwesomeIcon icon={faClock} className="mr-2 text-gray-500"/>
                         <Text c="gray.9">Duration: 2 Days</Text>
                     </Group>
-                    <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button>
+                    {/* <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button> */}
                   </Stack>
                 </Box>
               </Flex>
@@ -124,7 +124,7 @@ function CoursesPanel() {
                       <FontAwesomeIcon icon={faClock} className="mr-2 text-gray-500"/>
                       <Text c="gray.9">Duration: 2 Days</Text>
                     </Group>
-                    <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button>
+                    {/* <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button> */}
                   </Stack>
                 </Box>
                 <Box flex={1} style={{ backgroundImage: `url(${firstAidImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
@@ -146,7 +146,7 @@ function CoursesPanel() {
                         <FontAwesomeIcon icon={faClock} className="mr-2 text-gray-500"/>
                         <Text c="gray.9">Duration: 3-7 Days</Text>
                     </Group>
-                    <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button>
+                    {/* <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button> */}
                   </Stack>
                 </Box>
               </Flex>

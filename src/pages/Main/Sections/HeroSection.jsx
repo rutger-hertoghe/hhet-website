@@ -1,7 +1,7 @@
 import { faEnvelope, faListUl } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BackgroundImage, Box, Button, Divider, Flex, Grid, Group, Stack, Text, Title } from "@mantine/core";
-import heroImage from '../../../assets/images/DETER_grey.jpeg';
+import heroImage from '../../../assets/images/heat_grey.jpeg';
 
 
 function HeroSection() {
