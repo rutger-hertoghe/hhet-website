@@ -34,19 +34,10 @@
   }
 }
 
-/* Offset anchor jumps so section tops aren't hidden under the fixed navbar.
-   ~80px matches the rendered bar: h-18 logo (~72px) + 3px yellow border. */
+/* Offset scroll-to-section so a section top isn't hidden under the fixed navbar.
+   ~80px matches the rendered bar: h-18 logo (~72px) + 3px yellow border.
+   scroll-padding-top on the scroll container (html) covers both native #anchor
+   navigation and JS scrollIntoView. */
 html {
   scroll-padding-top: 80px;
-}
-
-#home,
-#courses,
-#concept,
-#experts,
-#network,
-#contact,
-#about,
-#reviews {
-  scroll-margin-top: 80px;
 }
