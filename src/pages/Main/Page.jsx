@@ -17,7 +17,7 @@ export default function Page() {
         {/* </div> */}
 
         {/* ---- COURSES ---- */}
-        <div id="courses" className="bg-gray-100 h-screen">
+        <div id="courses" className="bg-gray-100 md:min-h-dvh">
           <Spacer />
           <CoursesPanel />
         </div>
@@ -29,31 +29,31 @@ export default function Page() {
         </div>
 
         {/* ---- TRAINERS ---- */}
-        <div id="experts" className="bg-gray-100 h-screen">
+        <div id="experts" className="bg-gray-100 md:min-h-dvh">
           {/* <Spacer /> */}
           <ExpertPanel />
         </div>
 
         {/* ---- NETWORK ---- */}
-        <div id="network" className="bg-gray-100 h-screen">
+        <div id="network" className="bg-gray-100 md:min-h-dvh">
           {/* <Spacer /> */}
           <NetworkPanel />
         </div>
 
         {/* --- CONTACT ---*/}
-        <div id="contact" className="bg-gray-100 h-screen">
+        <div id="contact" className="bg-gray-100 md:min-h-dvh">
           {/* <Spacer /> */}
           <ContactForm />
         </div>
 
         {/* ---- ABOUT ---- */}
-        <div id="about" className="bg-gray-100 min-h-screen h-full pb-10">
+        <div id="about" className="bg-gray-100 md:min-h-dvh pb-10">
           {/* <Spacer /> */}
           <AboutPanel />
         </div>
 
         {/* ---- REVIEWS ---- */}
-        <div id="reviews" className="bg-gray-100 min-h-screen h-full pb-10">
+        <div id="reviews" className="bg-gray-100 md:min-h-dvh pb-10">
           {/* <Spacer/> */}
           <ReviewSection/>
         </div>
