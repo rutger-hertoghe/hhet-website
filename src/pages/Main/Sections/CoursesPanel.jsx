@@ -18,7 +18,7 @@ function CoursesPanel() {
   }
 
   return (
-    <Box id="courses" bg="gray.1" h="100vh">
+    <Box id="courses" bg="gray.1" mih={{ md: '100dvh' }}>
       <Stack align='center'>
         <Title size={36}>
           Our Courses
@@ -26,7 +26,7 @@ function CoursesPanel() {
 
         <Divider w={60} color="yellow.5" size="sm" />
 
-        <Text ta="center" size="lg" w="50%" c="gray.7">
+        <Text ta="center" size="lg" w="100%" maw={620} c="gray.7">
           Each of our courses is built to reshape instinct, raise awareness, and embed practical skills, equipping individuals to respond with clarity when the unexpected becomes reality.
         </Text>
 
@@ -50,9 +50,9 @@ function CoursesPanel() {
           }}
         >
           <Carousel.Slide>
-            <Card h='50vh' withBorder p={0} radius="lg">
-              <Flex h="100%">
-                <Box flex={1} p={50}>
+            <Card mih={{ md: '50vh' }} withBorder p={0} radius="lg">
+              <Flex h="100%" direction={{ base: 'column', md: 'row' }}>
+                <Box flex={1} p={{ base: 'md', md: 50 }}>
                   <Stack>
                     <Title order={2}>{bigYellow("T")}RAVEL {bigYellow("S")}ECURITY {bigYellow("A")}WARENESS {bigYellow("T")}RAINING</Title>
                     <Text c="gray.7">
@@ -65,15 +65,15 @@ function CoursesPanel() {
                     {/* <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button> */}
                   </Stack>
                 </Box>
-                <Box flex={1} style={{ backgroundImage: `url(${tsatImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
+                <Box flex={1} h={{ base: 180, md: 'auto' }} style={{ backgroundImage: `url(${tsatImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
               </Flex>
             </Card>
           </Carousel.Slide>
           <Carousel.Slide>
-            <Card h='50vh' withBorder p={0} radius="lg">
-              <Flex h="100%">
-                <Box flex={1} style={{ backgroundImage: `url(${deterImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
-                <Box flex={1} p={50}>
+            <Card mih={{ md: '50vh' }} withBorder p={0} radius="lg">
+              <Flex h="100%" direction={{ base: 'column', md: 'row' }}>
+                <Box flex={1} h={{ base: 180, md: 'auto' }} style={{ backgroundImage: `url(${deterImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
+                <Box flex={1} p={{ base: 'md', md: 50 }}>
                   <Stack>
                     <Title order={2}>{bigYellow("D")}E-ESCALATION  {bigYellow("T")}ECHNIQUES & {bigYellow("R")}ESOURCES</Title>
                     <Text c="gray.7">
@@ -91,10 +91,10 @@ function CoursesPanel() {
           </Carousel.Slide>
 
           <Carousel.Slide>
-            <Card h='50vh' withBorder p={0} radius="lg">
-              <Flex h="100%">
-                <Box flex={1} style={{ backgroundImage: `url(${emergencyCareImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
-                <Box flex={1} p={50}>
+            <Card mih={{ md: '50vh' }} withBorder p={0} radius="lg">
+              <Flex h="100%" direction={{ base: 'column', md: 'row' }}>
+                <Box flex={1} h={{ base: 180, md: 'auto' }} style={{ backgroundImage: `url(${emergencyCareImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
+                <Box flex={1} p={{ base: 'md', md: 50 }}>
                   <Stack>
                     <Title order={2}>{bigYellow("E")}MERGENCY {bigYellow("C")}ASUALTY {bigYellow("C")}ARE</Title>
                     <Text c="gray.7">
@@ -112,9 +112,9 @@ function CoursesPanel() {
           </Carousel.Slide>
 
           <Carousel.Slide>
-            <Card h='50vh' withBorder p={0} radius="lg">
-              <Flex h="100%">
-                <Box flex={1} p={50}>
+            <Card mih={{ md: '50vh' }} withBorder p={0} radius="lg">
+              <Flex h="100%" direction={{ base: 'column', md: 'row' }}>
+                <Box flex={1} p={{ base: 'md', md: 50 }}>
                   <Stack>
                     <Title order={2}>{bigYellow("F")}IRST {bigYellow("A")}ID {bigYellow("T")}RAINING</Title>
                     <Text c="gray.7">
@@ -127,16 +127,16 @@ function CoursesPanel() {
                     {/* <Button maw={120} color="yellow.5" rightSection={<FontAwesomeIcon icon={faCaretRight}/>}>More info</Button> */}
                   </Stack>
                 </Box>
-                <Box flex={1} style={{ backgroundImage: `url(${firstAidImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
+                <Box flex={1} h={{ base: 180, md: 'auto' }} style={{ backgroundImage: `url(${firstAidImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
               </Flex>
             </Card>
           </Carousel.Slide>
 
           <Carousel.Slide>
-            <Card h='50vh' withBorder p={0} radius="lg">
-              <Flex h="100%">
-                <Box flex={1} style={{ backgroundImage: `url(${heatImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
-                <Box flex={1} p={50}>
+            <Card mih={{ md: '50vh' }} withBorder p={0} radius="lg">
+              <Flex h="100%" direction={{ base: 'column', md: 'row' }}>
+                <Box flex={1} h={{ base: 180, md: 'auto' }} style={{ backgroundImage: `url(${heatImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
+                <Box flex={1} p={{ base: 'md', md: 50 }}>
                   <Stack>
                     <Title order={2}>{bigYellow("H")}OSTILE {bigYellow("E")}NVIRONMENT {bigYellow("A")}WARENESS {bigYellow("T")}RAINING</Title>
                     <Text c="gray.7">
