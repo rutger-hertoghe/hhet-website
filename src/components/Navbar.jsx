@@ -1,36 +1,80 @@
-import {useState} from 'react';
+import { useState } from 'react';
+import { Burger, Drawer, Stack } from '@mantine/core';
 import logo from '../assets/images/het-logo-538.webp';
+import { ScrollToElement } from '../utilities';
 
-function Navbar(){
+function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    {name: "Home",   href: "#home"},
-    {name: "Courses", href: "#courses"},
-    {name: "Concept", href: "#concept"},
-    {name: "Experts", href: "#experts"},
-    {name: "Network", href: "#network"},
-    {name: "Contact", href: "#contact"},
-    {name: "About",   href: "#about"},
-    {name: "Reviews", href: "#reviews"}
+    { name: "Home",    id: "home" },
+    { name: "Courses", id: "courses" },
+    { name: "Concept", id: "concept" },
+    { name: "Experts", id: "experts" },
+    { name: "Network", id: "network" },
+    { name: "Contact", id: "contact" },
+    { name: "About",   id: "about" },
+    { name: "Reviews", id: "reviews" }
   ];
 
+  const handleNavClick = (sectionId) => {
+    setOpen(false);
+    ScrollToElement(sectionId);
+  };
+
   return (
-    <nav className="fixed top-0 w-full inset-shadow-white-500 border-b-3 border-yellow-300 shadow-xl/10 bg-black z-50 mb-20">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="fixed top-0 w-full border-b-3 border-yellow-300 shadow-xl/10 bg-black z-50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
         <div>
           <img src={logo} alt="HHET.BE" className="h-18 my-1 border border-white" />
         </div>
-        <ul className="md:flex space-x-4">
+
+        {/* Desktop link bar (md and up) */}
+        <ul className="hidden md:flex space-x-4">
           {navItems.map((item) => (
-            <li key={item.href}>
-              <a href={item.href} className="text-white hover:text-yellow-500 transition duration-300">
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                onClick={(event) => { event.preventDefault(); handleNavClick(item.id); }}
+                className="text-white hover:text-yellow-500 transition duration-300 cursor-pointer"
+              >
                 {item.name}
               </a>
             </li>
           ))}
         </ul>
+
+        {/* Mobile burger (below md) */}
+        <Burger
+          opened={open}
+          onClick={() => setOpen((isOpen) => !isOpen)}
+          color="white"
+          className="md:hidden"
+          aria-label="Toggle navigation"
+        />
       </div>
+
+      <Drawer
+        opened={open}
+        onClose={() => setOpen(false)}
+        position="right"
+        size="70%"
+        title="Menu"
+        zIndex={1000}
+      >
+        <Stack>
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              onClick={(event) => { event.preventDefault(); handleNavClick(item.id); }}
+              className="text-black hover:text-yellow-600 transition duration-300 text-lg cursor-pointer"
+            >
+              {item.name}
+            </a>
+          ))}
+        </Stack>
+      </Drawer>
     </nav>
   );
 }
