@@ -1,4 +1,7 @@
 export function ScrollToElement(elementId) {
-  const el = document.getElementById(elementId);
-  el.scrollIntoView({ behavior: "smooth" });
+  const targetElement = document.getElementById(elementId);
+  if (!targetElement) {
+    return;
+  }
+  targetElement.scrollIntoView({ behavior: "smooth" });
 }
