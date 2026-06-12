@@ -3,6 +3,18 @@ import { Burger, Drawer, Stack } from '@mantine/core';
 import logo from '../assets/images/het-logo-538.webp';
 import { ScrollToElement } from '../utilities';
 
+function NavLink({ item, onSelect, className }) {
+  return (
+    <a
+      href={`#${item.id}`}
+      onClick={(event) => { event.preventDefault(); onSelect(item.id); }}
+      className={`transition duration-300 cursor-pointer ${className}`}
+    >
+      {item.name}
+    </a>
+  );
+}
+
 function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -33,13 +45,7 @@ function Navbar() {
         <ul className="hidden md:flex space-x-4">
           {navItems.map((item) => (
             <li key={item.id}>
-              <a
-                href={`#${item.id}`}
-                onClick={(event) => { event.preventDefault(); handleNavClick(item.id); }}
-                className="text-white hover:text-yellow-500 transition duration-300 cursor-pointer"
-              >
-                {item.name}
-              </a>
+              <NavLink item={item} onSelect={handleNavClick} className="text-white hover:text-yellow-500" />
             </li>
           ))}
         </ul>
@@ -64,14 +70,12 @@ function Navbar() {
       >
         <Stack>
           {navItems.map((item) => (
-            <a
+            <NavLink
               key={item.id}
-              href={`#${item.id}`}
-              onClick={(event) => { event.preventDefault(); handleNavClick(item.id); }}
-              className="text-black hover:text-yellow-600 transition duration-300 text-lg cursor-pointer"
-            >
-              {item.name}
-            </a>
+              item={item}
+              onSelect={handleNavClick}
+              className="text-black hover:text-yellow-600 text-lg"
+            />
           ))}
         </Stack>
       </Drawer>
