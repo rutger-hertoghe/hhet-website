@@ -25,7 +25,7 @@ function HeroSection() {
 
           <Text c="gray.3" w="50%" ta="center" size="lg" mb="xl">At HHET-BE Training & Consulting, we don't teach textbook theory. We transform mindset and behavior through immersive, experience-driven training led by instructors who've served in the world's most volatile environments.</Text>
 
-          <Text c='gray.3' w="50%" ta="center" size="lg" mb="xl">Prepare your people — not with fear, but with readiness.</Text>
+          <Text c='gray.3' w="50%" ta="center" size="lg" mb="xl">Prepare your people, not with fear, but with readiness.</Text>
 
           <Group>
             <Button 

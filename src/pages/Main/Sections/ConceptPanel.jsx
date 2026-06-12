@@ -9,7 +9,7 @@ const trainingMethods = [
     icon: faUsers,
     title: 'Active Participation',
     description:
-      'Learners are not passive recipients but engaged contributors—challenged to reflect on their own perceptions, instincts, and decisions.',
+      'Learners are not passive recipients but engaged contributors, challenged to reflect on their own perceptions, instincts, and decisions.',
   },
   {
     icon: faComments,
@@ -51,11 +51,11 @@ function ConceptPanel() {
               </Text>{' '}
               handbook, as endorsed by the European Security and Defence College. Our programs are
               specifically tailored to meet the needs of civilian professionals operating in
-              crisis-prone environments—NGO staff, journalists, academics, businesspeople, and
+              crisis-prone environments: NGO staff, journalists, academics, businesspeople, and
               field researchers alike.
             </Text>
             <Text size="lg" c="dark.6" ta="center" fw={500} fs="italic">
-              We don't just deliver content—we shape capability.
+              We don't just deliver content - we shape capability.
             </Text>
             <Text size="md" c="gray.7" ta="center" maw={780} lh={1.7}>
               Every course is designed to empower participants with the awareness, mindset, and
@@ -148,7 +148,7 @@ function ConceptPanel() {
                     The Outsider
                   </Anchor>
                   . This add-on transforms the experience into a physically immersive,
-                  back-to-basics training—ideal for testing adaptability, teamwork, and leadership
+                  back-to-basics training - ideal for testing adaptability, teamwork, and leadership
                   in raw conditions.
                 </Text>
               </Paper>
@@ -159,7 +159,7 @@ function ConceptPanel() {
           <Paper p="xl" radius="md" ta="center" bg="dark.8">
             <Text size="lg" c="gray.3" lh={1.8} fw={400} fs="italic" maw={720} mx="auto">
               Our participants return more capable, more confident, and more prepared to lead with
-              clarity—{' '}
+              clarity - {' '}
               <Text component="span" c="yellow.4" fw={600} fs="normal">
                 when it matters most.
               </Text>

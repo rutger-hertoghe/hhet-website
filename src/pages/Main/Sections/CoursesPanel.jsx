@@ -27,7 +27,7 @@ function CoursesPanel() {
         <Divider w={60} color="yellow.5" size="sm" />
 
         <Text ta="center" size="lg" w="50%" c="gray.7">
-          Each of our courses is built to reshape instinct, raise awareness, and embed practical skills — equipping individuals to respond with clarity when the unexpected becomes reality.
+          Each of our courses is built to reshape instinct, raise awareness, and embed practical skills, equipping individuals to respond with clarity when the unexpected becomes reality.
         </Text>
 
         <Carousel 
