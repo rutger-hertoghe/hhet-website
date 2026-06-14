@@ -7,7 +7,10 @@ function NavLink({ item, onSelect, className }) {
   return (
     <a
       href={`#${item.id}`}
-      onClick={(event) => { event.preventDefault(); onSelect(item.id); }}
+      onClick={(event) => { 
+        event.preventDefault(); 
+        onSelect(item.id); 
+      }}
       className={`transition duration-300 cursor-pointer ${className}`}
     >
       {item.name}
@@ -65,7 +68,7 @@ function Navbar() {
         onClose={() => setOpen(false)}
         position="right"
         size="70%"
-        title="Menu"
+        title={null}
         zIndex={1000}
       >
         <Stack>
