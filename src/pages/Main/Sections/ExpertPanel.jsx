@@ -14,10 +14,19 @@ import {
 } from '@mantine/core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
+  faCertificate,
+  faCrosshairs,
+  faGavel,
   faGlobe,
+  faHammer,
+  faHand,
+  faHandFist,
   faLanguage,
   faMedkit,
+  faPersonMilitaryPointing,
+  faShield,
   faShieldAlt,
+  faShieldHalved,
   faStar,
   faUserShield,
   faUserTie,
@@ -123,11 +132,12 @@ function ExpertPanel() {
               mainExp="International operations & law enforcement"
               languages="Dutch, French, German, English"
             >
-              <ExpLine icon={faStar}>Firearms Specialist & EU Range Officer</ExpLine>
-              <ExpLine icon={faUserShield}>Tactical & Emergency Care Instructor</ExpLine>
-              <ExpLine icon={faGlobe}>Hostile Environment Awareness Trainer</ExpLine>
-              <ExpLine icon={faMedkit}>FPOS BTEC Level 2, Breacher</ExpLine>
-              <ExpLine icon={faStar}>Crisis Management & ASP Certified</ExpLine>
+              <ExpLine icon={faShield}>Former Close Protection Operator</ExpLine>
+              <ExpLine icon={faCrosshairs}>Firearms Specialist & Tactical Intervention Techniques Instructor</ExpLine>
+              <ExpLine icon={faHammer}>Breacher Level 2</ExpLine>
+              <ExpLine icon={faUserShield}>TECC & HEAT Instructor</ExpLine>
+              <ExpLine icon={faStar}>ASP (USA) Instructor</ExpLine>
+              <ExpLine icon={faMedkit}>FPOS BTEC Level 2 (UK) & Crisis Management Specialization (USA)</ExpLine>
             </ExpertCard>
 
             <ExpertCard
@@ -135,9 +145,10 @@ function ExpertPanel() {
               mainExp="International operations & law enforcement"
               languages="German, English, Dutch"
             >
-              <ExpLine icon={faGlobe}>WPS, Gender & Human Rights</ExpLine>
-              <ExpLine icon={faUserShield}>HEAT Trainer, Close Protection</ExpLine>
+              <ExpLine icon={faShield}>Former Close Protection Operator</ExpLine>
+              <ExpLine icon={faUserShield}>HEAT Instructor</ExpLine>
               <ExpLine icon={faMedkit}>First Aid & TCCC Certified</ExpLine>
+              <ExpLine icon={faGlobe}>WPS, Gender & Human Rights Specialization</ExpLine>
             </ExpertCard>
 
             <ExpertCard
@@ -145,9 +156,11 @@ function ExpertPanel() {
               mainExp="Law enforcement"
               languages="English, French, Dutch"
             >
-              <ExpLine icon={faUserShield}>Use of Force & Tactical Intervention</ExpLine>
-              <ExpLine icon={faMedkit}>TECC & Martial Arts Certified</ExpLine>
-              <ExpLine icon={faStar}>Breacher & ASP Instructor</ExpLine>
+              <ExpLine icon={faHandFist}>Use of Force & Martial Arts Instructor</ExpLine>
+              <ExpLine icon={faCrosshairs}>Tactical Intervention Techniques Instructor</ExpLine>
+              <ExpLine icon={faHammer}>Breacher Level 2</ExpLine>
+              <ExpLine icon={faMedkit}>TECC Instructor</ExpLine>
+              <ExpLine icon={faStar}>ASP (USA) Instructor</ExpLine>
             </ExpertCard>
           </SimpleGrid>
 

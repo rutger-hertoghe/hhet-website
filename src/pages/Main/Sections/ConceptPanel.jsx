@@ -128,9 +128,6 @@ function ConceptPanel() {
                 h="100%"
                 style={{ borderLeft: '4px solid var(--mantine-color-yellow-5)' }}
               >
-                {/* <ThemeIcon size={52} radius="xl" color="yellow" variant="light" mb="md">
-                  <FontAwesomeIcon icon={faTree} size="lg" />
-                </ThemeIcon> */}
                 <Image src={theOutsiderLimburgImg} alt={"The Outsider"} h={70} w="auto" fit="contain" />
                 <Title order={4} mb="xs" c="yellow.9">
                   Back to Basics – Outdoor Training Option
